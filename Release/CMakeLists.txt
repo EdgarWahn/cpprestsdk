@@ -4,14 +4,10 @@ if(POLICY CMP0042)
   cmake_policy(SET CMP0042 NEW) # use MACOSX_RPATH
 endif()
 if(UNIX)
-  project(cpprestsdk C CXX)
+  project(cpprestsdk VERSION 2.10.6 LANGUAGES C CXX)
 else()
-  project(cpprestsdk CXX)
+  project(cpprestsdk VERSION 2.10.6 LANGUAGES CXX)
 endif()
-
-set(CPPREST_VERSION_MAJOR 2)
-set(CPPREST_VERSION_MINOR 10)
-set(CPPREST_VERSION_REVISION 6)
 
 enable_testing()
 
