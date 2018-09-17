@@ -254,3 +254,7 @@ endif()
 if(BUILD_SAMPLES)
   add_subdirectory(samples)
 endif()
+
+CONFIGURE_FILE(cpprestConfig.cmake.in "${PROJECT_BINARY_DIR}/cpprestConfig.cmake" @ONLY)
+CONFIGURE_FILE(cpprestConfigVersion.cmake.in "${PROJECT_BINARY_DIR}/cpprestConfigVersion.cmake" @ONLY)
+
