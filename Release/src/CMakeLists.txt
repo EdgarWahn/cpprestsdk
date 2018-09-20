@@ -37,7 +37,7 @@ set(SOURCES
   utilities/web_utilities.cpp
 )
 
-add_library(cpprest ${SOURCES})
+add_library(cpprest STATIC ${SOURCES})
 target_include_directories(cpprest
   PUBLIC
     $<INSTALL_INTERFACE:include> $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
